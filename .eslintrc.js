@@ -15,5 +15,18 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        vue: 'never',
+      },
+    ],
+    'vue/html-closing-bracket-newline': ["error", {
+      "singleline": "never",
+      "multiline": "never"
+    }]
+  }
 }
